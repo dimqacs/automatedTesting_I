@@ -61,10 +61,11 @@ public class FormPage {
 
         Type(field, subject);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(7));
         wait.until(ExpectedConditions.visibilityOfElementLocated(
                 By.cssSelector(".subjects-auto-complete__menu-list")));
 
+        javascriptExecutor.executeScript("arguments[0].scrollIntoView(true);", field);
         WebElement firstSuggestion = driver.findElement(By.cssSelector(".subjects-auto-complete__option"));
         firstSuggestion.click();
     }
