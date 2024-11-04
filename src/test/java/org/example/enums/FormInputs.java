@@ -10,7 +10,7 @@ public enum FormInputs {
     SUBJECT_BIOLOGY("Biology"),
     SPORTS_HOBBY_ID("hobbies-checkbox-1"),
     MUSIC_HOBBY_ID("hobbies-checkbox-3"),
-    FILE_PATH("/home/dimqacs/JavaProjects/testing/src/test/resources/pictures/user.png"),
+    FILE_PATH("/home/dimqacs/Java Projects/automatedTesting_I/src/test/resources/pictures/user.png"),
     ADDRESS("13 Vasile Dokuceaev Street"),
     STATE("NCR"),
     CITY("Delhi");
