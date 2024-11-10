@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-10T11:37:53 EST" name="Command line suite" finished-at="2024-11-10T11:37:57 EST" duration-ms="3738">
+    <groups>
+    </groups>
+    <test started-at="2024-11-10T11:37:53 EST" name="Command line test" finished-at="2024-11-10T11:37:57 EST" duration-ms="3738">
+      <class name="org.example.FormTest">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:org.example.FormTest@38364841]" started-at="2024-11-10T11:37:53 EST" name="BeforeClass" finished-at="2024-11-10T11:37:53 EST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="FormFillingTest()[pri:0, instance:org.example.FormTest@38364841]" started-at="2024-11-10T11:37:53 EST" name="FormFillingTest" finished-at="2024-11-10T11:37:56 EST" duration-ms="3000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FormFillingTest -->
+        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:org.example.FormTest@38364841]" started-at="2024-11-10T11:37:56 EST" name="CloseDriver" finished-at="2024-11-10T11:37:57 EST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+      </class> <!-- org.example.FormTest -->
+      <class name="org.example.AppTest">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:org.example.AppTest@473b46c3]" started-at="2024-11-10T11:37:57 EST" name="shouldAnswerWithTrue" finished-at="2024-11-10T11:37:57 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- org.example.AppTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

@@ -24,6 +24,11 @@ public class FormPage {
         Type(field, firstName);
     }
 
+    public String getFirstAndLastName() {
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[1]/td[2]"));
+        return field.getText();
+    }
+
     public void setLastName(String lastName) {
         WebElement field = driver.findElement(By.id("lastName"));
         Type(field, lastName);
@@ -34,14 +39,29 @@ public class FormPage {
         Type(field, email);
     }
 
+    public String getEmail() {
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[2]/td[2]"));
+        return field.getText();
+    }
+
     public void selectMaleGender() {
         WebElement field = driver.findElement(By.xpath("//label[@for='gender-radio-1']"));
         field.click();
     }
 
+    public String getGender() {
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[3]/td[2]"));
+        return field.getText();
+    }
+
     public void setMobileNumber(String mobileNumber) {
         WebElement field = driver.findElement(By.id("userNumber"));
         Type(field, mobileNumber);
+    }
+
+    public String getMobileNumber() {
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[4]/td[2]"));
+        return field.getText();
     }
 
     public void setDateOfBirth(String dateOfBirth) {
@@ -52,6 +72,11 @@ public class FormPage {
 
         field.sendKeys(dateOfBirth);
         field.sendKeys(Keys.ENTER);
+    }
+
+    public String getDateOfBirth() {
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[5]/td[2]"));
+        return field.getText();
     }
 
     public void setSubject(String subject) {
@@ -70,9 +95,19 @@ public class FormPage {
         firstSuggestion.click();
     }
 
+    public String getSubjects(){
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[6]/td[2]"));
+        return field.getText();
+    }
+
     public void setHobby(String hobbyId) {
         WebElement field = driver.findElement(By.cssSelector("label[for='" + hobbyId + "']"));
         field.click();
+    }
+
+    public String getHobbies(){
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[7]/td[2]"));
+        return field.getText();
     }
 
     public void setPicture(String filePath) {
@@ -80,9 +115,19 @@ public class FormPage {
         Type(field, filePath);
     }
 
+    public String getPicture() {
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[8]/td[2]"));
+        return field.getText();
+    }
+
     public void setAddress(String address) {
         WebElement field = driver.findElement(By.id("currentAddress"));
         Type(field, address);
+    }
+
+    public String getAddress() {
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[9]/td[2]"));
+        return field.getText();
     }
 
     public void setState(String state) {
@@ -93,6 +138,11 @@ public class FormPage {
     public void setCity(String city) {
         WebElement field = driver.findElement(By.id("react-select-4-input"));
         TypeAndEnter(field, city);
+    }
+
+    public String getStateAndCity() {
+        WebElement field = driver.findElement(By.xpath("//tbody/tr[10]/td[2]"));
+        return field.getText();
     }
 
     public void submitForm() {

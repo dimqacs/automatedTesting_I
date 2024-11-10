@@ -5,9 +5,14 @@ import org.example.pom.FormPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class FormTest {
 
@@ -42,6 +47,21 @@ public class FormTest {
         page.setState(FormInputs.STATE.getValue());
         page.setCity(FormInputs.CITY.getValue());
         page.submitForm();
+
+        Assert.assertEquals(page.getFirstAndLastName(), FormInputs.FIRST_NAME.getValue() + " " + FormInputs.LAST_NAME.getValue());
+        Assert.assertEquals(page.getEmail(), FormInputs.USER_EMAIL.getValue());
+        Assert.assertEquals(page.getGender(), FormInputs.GENDER.getValue());
+        Assert.assertEquals(page.getMobileNumber(), FormInputs.PHONE_NUMBER.getValue());
+        Assert.assertEquals(
+                page.getDateOfBirth(),
+                LocalDate.parse(FormInputs.DATE_OF_BIRTH.getValue(), DateTimeFormatter.ofPattern("dd MMM yyyy"))
+                        .format(DateTimeFormatter.ofPattern("dd MMMM,yyyy"))
+        );
+        Assert.assertEquals(page.getSubjects(), FormInputs.SUBJECT_MATH.getValue() + ", " + FormInputs.SUBJECT_BIOLOGY.getValue());
+        Assert.assertEquals(page.getHobbies(), FormInputs.HOBBIES.getValue());
+        Assert.assertEquals(page.getPicture(), Paths.get(FormInputs.FILE_PATH.getValue()).getFileName().toString());
+        Assert.assertEquals(page.getAddress(), FormInputs.ADDRESS.getValue());
+        Assert.assertEquals(page.getStateAndCity(), FormInputs.STATE.getValue() + " " + FormInputs.CITY.getValue());
     }
 
     @AfterClass
