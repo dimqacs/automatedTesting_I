@@ -38,6 +38,8 @@ public class FormTest {
         driver.get("https://demoqa.com/automation-practice-form");
         FormPage page = new FormPage(driver);
 
+        page.closeAdv();
+
         page.setFirstName(FormInputs.FIRST_NAME.getValue());
         logger.info("The first name was set");
         Thread.sleep(1000);

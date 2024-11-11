@@ -19,6 +19,19 @@ public class FormPage {
         PageFactory.initElements(driver, this);
     }
 
+    public void closeAdv() {
+        try {
+            javascriptExecutor.executeScript("var elem = document.evaluate(\"//footer\", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;" +
+                    "elem.parentNode.removeChild(elem);");
+        }
+        catch (Exception ignored) {}
+        try {
+            javascriptExecutor.executeScript("var elem = document.getElementById('fixedban');" +
+                    "elem.parentNode.removeChild(elem);");
+        }
+        catch (Exception ignored) {}
+    }
+
     public void setFirstName(String firstName) {
         WebElement field = driver.findElement(By.id("firstName"));
         Type(field, firstName);
