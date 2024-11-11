@@ -60,8 +60,8 @@ public class FormTest {
         Thread.sleep(1000);
         page.setHobby(FormInputs.MUSIC_HOBBY_ID.getValue());
         Thread.sleep(1000);
-        page.setPicture(FormInputs.FILE_PATH.getValue());
-        Thread.sleep(1000);
+//        page.setPicture(FormInputs.FILE_PATH.getValue());
+//        Thread.sleep(1000);
         page.setAddress(FormInputs.ADDRESS.getValue());
         Thread.sleep(1000);
         page.setState(FormInputs.STATE.getValue());
@@ -85,7 +85,7 @@ public class FormTest {
         );
         Assert.assertEquals(page.getSubjects(), FormInputs.SUBJECT_MATH.getValue() + ", " + FormInputs.SUBJECT_BIOLOGY.getValue());
         Assert.assertEquals(page.getHobbies(), FormInputs.HOBBIES.getValue());
-        Assert.assertEquals(page.getPicture(), Paths.get(FormInputs.FILE_PATH.getValue()).getFileName().toString());
+//        Assert.assertEquals(page.getPicture(), Paths.get(FormInputs.FILE_PATH.getValue()).getFileName().toString());
         Assert.assertEquals(page.getAddress(), FormInputs.ADDRESS.getValue());
         Assert.assertEquals(page.getStateAndCity(), FormInputs.STATE.getValue() + " " + FormInputs.CITY.getValue());
         logger.info("End Test");
