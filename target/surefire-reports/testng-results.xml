@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-11T06:25:10 EST" name="Command line suite" finished-at="2024-11-11T06:25:48 EST" duration-ms="37812">
+  <suite started-at="2024-11-11T08:56:29 EST" name="Practice Suite" finished-at="2024-11-11T08:56:56 EST" duration-ms="27082">
     <groups>
     </groups>
-    <test started-at="2024-11-11T06:25:10 EST" name="Command line test" finished-at="2024-11-11T06:25:48 EST" duration-ms="37812">
+    <test started-at="2024-11-11T08:56:29 EST" name="Test Basics 1" finished-at="2024-11-11T08:56:56 EST" duration-ms="27082">
       <class name="org.example.FormTest">
-        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:org.example.FormTest@6385cb26]" started-at="2024-11-11T06:25:10 EST" name="BeforeClass" finished-at="2024-11-11T06:25:11 EST" duration-ms="787" status="PASS">
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:org.example.FormTest@192d43ce]" started-at="2024-11-11T08:56:29 EST" name="BeforeClass" finished-at="2024-11-11T08:56:30 EST" duration-ms="949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method signature="FormFillingTest()[pri:0, instance:org.example.FormTest@6385cb26]" started-at="2024-11-11T06:25:11 EST" name="FormFillingTest" finished-at="2024-11-11T06:25:48 EST" duration-ms="36906" status="PASS">
+        <test-method signature="FormFillingTest()[pri:0, instance:org.example.FormTest@192d43ce]" started-at="2024-11-11T08:56:30 EST" name="FormFillingTest" finished-at="2024-11-11T08:56:56 EST" duration-ms="25993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FormFillingTest -->
-        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:org.example.FormTest@6385cb26]" started-at="2024-11-11T06:25:48 EST" name="CloseDriver" finished-at="2024-11-11T06:25:48 EST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:org.example.FormTest@192d43ce]" started-at="2024-11-11T08:56:56 EST" name="CloseDriver" finished-at="2024-11-11T08:56:56 EST" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
       </class> <!-- org.example.FormTest -->
-      <class name="org.example.AppTest">
-        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:org.example.AppTest@15d9bc04]" started-at="2024-11-11T06:25:48 EST" name="shouldAnswerWithTrue" finished-at="2024-11-11T06:25:48 EST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldAnswerWithTrue -->
-      </class> <!-- org.example.AppTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Test Basics 1 -->
+  </suite> <!-- Practice Suite -->
 </testng-results>
